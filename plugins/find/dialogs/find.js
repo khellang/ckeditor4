@@ -232,10 +232,7 @@
 				this._.highlightRange = range;
 
 				// Scroll the editor to the highlighted area.
-				var element = range.startContainer;
-				if ( element.type != CKEDITOR.NODE_ELEMENT )
-					element = element.getParent();
-				element.scrollIntoView();
+				range.scrollIntoView();
 
 				// Update the character cursors.
 				this.updateFromDomRange( range );
